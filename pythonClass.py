@@ -5,8 +5,10 @@ class Employee:
         self.pay = pay
         self.email = first + '.' + last + '@company.com'
 
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
 
-emp_1 = Employee('Hari', "Haran", 89000)
+emp_1 = Employee('Hari', 'Haran', 89000)
 emp_2 = Employee('Nitish', 'Kumar', 88000)
 
-print(Employee)
+print(emp_1.fullname())
